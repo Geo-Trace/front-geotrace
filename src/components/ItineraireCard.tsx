@@ -15,7 +15,7 @@ export default function ItineraireCard() {
           image="https://media.istockphoto.com/photos/lighthouse-sea-and-beautiful-snow-covered-mountain-and-cloudy-blue-picture-id1358847994?b=1&k=20&m=1358847994&s=170667a&w=0&h=3VH1S3kDTz0OBxqLZSRjTRdlntfzRFJRYXH8vLN-248="
           alt="green iguana"
         />
-        <CardContent>
+        <CardContent sx={{ margin: '0px', padding: '0px', textAlign: 'center'}}>
           <Typography gutterBottom variant="h5" component="div">
             Mon Itinéraire
           </Typography>
