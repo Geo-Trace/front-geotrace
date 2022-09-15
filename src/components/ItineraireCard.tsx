@@ -18,7 +18,6 @@ const ItineraireCard: React.FC<Props> = ({ itineraire }) => {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="300"
           image={itineraire.image}
           alt={`photo ${itineraire.nom}`}
         />
