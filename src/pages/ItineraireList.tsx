@@ -13,7 +13,7 @@ function ItineraireList() {
     useEffect(() => {
         // code executer au lancement de la page 
         setItineaires(ITINERAIRE);
-    });
+    },[]);
     
     return (
             <Container sx={{ py: 8 }} >
