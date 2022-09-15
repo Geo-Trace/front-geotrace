@@ -19,7 +19,7 @@ function ItineraireList() {
             <Container sx={{ py: 8 }} >
                 <Grid container spacing={4}>
                     {itineraires.map((itineraire) => (
-                        <Grid item key={itineraire.nom} xs={12} sm={6} md={4}>
+                        <Grid item key={itineraire.id} xs={12} sm={6} md={4}>
                             <ItineraireCard itineraire={itineraire} />
                         </Grid>
                     ))}
