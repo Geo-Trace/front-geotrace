@@ -2,7 +2,7 @@ export default class Itineraire {
     nom: string;
     activite: string;
     distance: number;
-    diffuculte: number;
+    difficulte: number;
     denivele: number;
     image: string;
     secteurGeo: string;
@@ -11,7 +11,7 @@ export default class Itineraire {
         nom: string,
         activite: string,
         distance: number,
-        diffuculte: number,
+        difficulte: number,
         denivele: number,
         image: string,
         secteurGeo: string
@@ -19,7 +19,7 @@ export default class Itineraire {
         this.nom = nom;
         this.activite = activite;
         this.distance = distance;
-        this.diffuculte = diffuculte;
+        this.difficulte = difficulte;
         this.denivele = denivele;
         this.image = image;
         this.secteurGeo = secteurGeo;
