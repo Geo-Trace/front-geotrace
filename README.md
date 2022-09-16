@@ -7,6 +7,18 @@ _version traduit en français_
 
 Ce projet a été démarré avec Create React App.
 
+## Installation du projet 
+
+### prérequis 
+
+- [NodeJs](https://nodejs.org/fr/) 
+
+### procédure d'installation
+
+- cloner le dossier et placer vous dans le dossier 
+- taper la commande : `npm install`
+- taper la commande : `npm start`  pour lancer le serveur de dévellopement
+
 ## Scripts disponibles
 
 Dans le répertoire du projet, vous pouvez exécuter :
