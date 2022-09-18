@@ -1,22 +1,25 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import ItineraireList from './pages/ItineraireList';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import ItineraireList from "./pages/ItineraireList";
+import ItineraireDetail from "./pages/itineraireDetails";
+import { Route, Routes } from "react-router-dom";
+import Itineraire from "./models/Itineraire";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
+      {"Copyright © "}
       <Link color="inherit" href="https://mui.com/">
         Your Website
-      </Link>{' '}
+      </Link>{" "}
       {new Date().getFullYear()}
-      {'.'}
+      {"."}
     </Typography>
   );
 }
@@ -28,15 +31,16 @@ export default function Album() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          {/* Toolbar */}
-        </Toolbar>
+        <Toolbar>{/* Toolbar */}</Toolbar>
       </AppBar>
       <main>
-        <ItineraireList/>
+        <Routes>
+          <Route path="/" element={<ItineraireList />} />
+          <Route path="/itineraire/" element={<ItineraireDetail />} />
+        </Routes>
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+      <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
