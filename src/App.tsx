@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ItineraireList from "./pages/ItineraireList";
-import ItineraireDetail from "./pages/itineraireDetails";
+import ItineraireDetails from "./pages/itineraireDetails";
 import { Route, Routes } from "react-router-dom";
 import Itineraire from "./models/Itineraire";
 
@@ -36,7 +36,7 @@ export default function Album() {
       <main>
         <Routes>
           <Route path="/" element={<ItineraireList />} />
-          <Route path="/itineraire/" element={<ItineraireDetail />} />
+          <Route path="/itineraire/" element={<ItineraireDetails />} />
         </Routes>
       </main>
       {/* Footer */}

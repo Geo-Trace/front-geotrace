@@ -15,7 +15,7 @@ type Props = {
 
 const ItineraireInfos: React.FC = () => {
   return (
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{textAlign: 'center'}}>
         <Grid item xs={2}>
           <Card>
             <Typography color="text.secondary" gutterBottom>

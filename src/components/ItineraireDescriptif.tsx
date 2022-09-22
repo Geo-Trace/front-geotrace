@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Itineraire from '../models/Itineraire';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
+import { Container } from '@mui/material';
 
 type Props = { 
   itineraire: Itineraire
@@ -15,13 +16,11 @@ const ItineraireDescriptif: React.FC = () => {
 
 
   return (
-    <Card>
-      <CardContent>
+      <Container>
         <Typography color="text.secondary" gutterBottom>
-          Descriptif
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui iusto incidunt corporis, accusantium quas inventore aspernatur ab. Optio, officia facere quidem rerum praesentium doloremque dicta nemo ea dolorum temporibus.
         </Typography>
-      </CardContent>
-    </Card>
+      </Container>
   );
 }
 
