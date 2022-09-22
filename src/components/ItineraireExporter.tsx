@@ -12,26 +12,22 @@ type Props = {
   itineraire: Itineraire
 }
 
-const ItineraireTitre: React.FC = () => {
+const ItineraireExporter: React.FC = () => {
 
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={1}>
-        <CardActionArea>
-            <Typography sx={{ bgcolor: 'primary.main'}} >
-              Accueil
+    <Grid container spacing={2} sx={{ mt:2 , padding: '0px', textAlign: 'center',flexDirection: 'row-reverse' }} >
+      <Grid item xs={3}>
+        <Card>
+          <CardActionArea>
+            <Typography>
+              Télécharger GPX
             </Typography>
-          </CardActionArea>  
-      </Grid>
-
-      <Grid item xs={10}>
-          <Typography>
-            Titre itineraire
-          </Typography>
+          </CardActionArea> 
+        </Card>
       </Grid>
     </Grid>
   );
 }
 
-export default ItineraireTitre; 
+export default ItineraireExporter; 

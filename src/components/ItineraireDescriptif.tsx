@@ -17,7 +17,7 @@ const ItineraireDescriptif: React.FC = () => {
 
   return (
       <Container>
-        <Typography color="text.secondary" gutterBottom>
+        <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui iusto incidunt corporis, accusantium quas inventore aspernatur ab. Optio, officia facere quidem rerum praesentium doloremque dicta nemo ea dolorum temporibus.
         </Typography>
       </Container>
