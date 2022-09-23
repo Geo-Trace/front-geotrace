@@ -8,6 +8,8 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import { Container, Grid } from "@mui/material";
 import { PassThrough } from "stream";
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 
 type Props = {
   itineraire: Itineraire;
@@ -48,19 +50,21 @@ const ItineraireInfos: React.FC = () => {
           </Card>
         </Grid>
 
-        <Grid item xs={2}>
+        <Grid item xs={1}>
           
         </Grid>
 
-        <Grid item xs={2}>
+        <Grid item xs={3}>
           <Card>
-            <Typography>
-            ★★★✩✩
-            </Typography>
+            <Stack>
+              <Rating name="note" defaultValue={2.5} precision={0.5} />
+            </Stack>
           </Card>
         </Grid>
       </Grid>
   );
 };
+
+
 
 export default ItineraireInfos;

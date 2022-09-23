@@ -14,7 +14,7 @@ function ItineraireList() {
 
     return (
             <><Container>
-                <CardContent sx={{ margin: 2, padding: '0px', textAlign: 'center', py: 8 }}>
+                <CardContent sx={{ margin: 2, padding: 'center', textAlign: 'center', py: 8 }}>
                     <Card>
                         <ItineraireTitre />
                     </Card>
@@ -32,6 +32,9 @@ function ItineraireList() {
                             <ItineraireExporter />
                         </Grid>
                     </Grid>
+                </CardContent>
+                <CardContent sx={{ margin: '0px', padding: '0px', textAlign: 'center', py: 8 }}>
+
                 </CardContent>
             </Container></>
             )

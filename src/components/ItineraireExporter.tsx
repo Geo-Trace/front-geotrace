@@ -17,14 +17,10 @@ const ItineraireExporter: React.FC = () => {
 
   return (
     <Grid container spacing={2} sx={{ mt:2 , padding: '0px', textAlign: 'center',flexDirection: 'row-reverse' }} >
-      <Grid item xs={3}>
-        <Card>
-          <CardActionArea>
-            <Typography>
-              Télécharger GPX
-            </Typography>
-          </CardActionArea> 
-        </Card>
+      <Grid item xs={4}>
+        <Button variant="outlined">
+          Télécharger GPX
+        </Button> 
       </Grid>
     </Grid>
   );

@@ -19,13 +19,13 @@ const ItineraireTitre: React.FC = () => {
     <Grid container spacing={2}>
       <Grid item xs={1}>
         <CardActionArea>
-            <Button variant="outlined">
+            <Typography sx={{ bgcolor: 'primary.main'}} >
               Accueil
-            </Button>
+            </Typography>
           </CardActionArea>  
       </Grid>
 
-      <Grid item xs={10} sx={{mt:1}}>
+      <Grid item xs={10}>
           <Typography>
             Titre itineraire
           </Typography>
