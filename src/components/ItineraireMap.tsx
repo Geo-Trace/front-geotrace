@@ -15,13 +15,7 @@ const ItineraireMap: React.FC = () => {
 
 
   return (
-    <Card>
-      <CardMedia
-      component="img"
-      alt="green iguana"
-      image="https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"
-      />
-    </Card>
+      <CardMedia component="img" alt="green iguana" image="https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"/>
   );
 }
 

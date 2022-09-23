@@ -10,6 +10,9 @@ import ItineraireList from "./pages/ItineraireList";
 import ItineraireDetails from "./pages/itineraireDetails";
 import { Route, Routes } from "react-router-dom";
 import Itineraire from "./models/Itineraire";
+import { green } from '@mui/material/colors';
+
+const Green = green[300];
 
 function Copyright() {
   return (
@@ -30,7 +33,7 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="relative" sx={{bgcolor: Green}}>
         <Toolbar>{/* Toolbar */}</Toolbar>
       </AppBar>
       <main>

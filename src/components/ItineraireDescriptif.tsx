@@ -6,7 +6,10 @@ import Typography from '@mui/material/Typography';
 import Itineraire from '../models/Itineraire';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-import { Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import { grey } from '@mui/material/colors';
+
+const Grey = grey[200];
 
 type Props = { 
   itineraire: Itineraire
@@ -16,11 +19,11 @@ const ItineraireDescriptif: React.FC = () => {
 
 
   return (
-      <Container>
-        <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui iusto incidunt corporis, accusantium quas inventore aspernatur ab. Optio, officia facere quidem rerum praesentium doloremque dicta nemo ea dolorum temporibus.
-        </Typography>
-      </Container>
+        <Box sx={{ mt: 2,py: 22, alignContent: 'center', textAlign: 'center', bgcolor: Grey}}>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui iusto incidunt corporis, accusantium quas inventore aspernatur ab. Optio, officia facere quidem rerum praesentium doloremque dicta nemo ea dolorum temporibus.
+          </Typography>
+        </Box>
   );
 }
 

@@ -10,6 +10,9 @@ import { Container, Grid } from "@mui/material";
 import { PassThrough } from "stream";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+import { grey } from '@mui/material/colors';
+
+const Grey = grey[200];
 
 type Props = {
   itineraire: Itineraire;
@@ -19,47 +22,41 @@ const ItineraireInfos: React.FC = () => {
   return (
       <Grid container spacing={2}>
         <Grid item xs={2}>
-          <Card>
-            <Typography>
+          <Card sx={{bgcolor: Grey, textAlign:'center'}}>
+            <h4>
               dif 4/5
-            </Typography>
+            </h4>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card>
-            <Typography>
+          <Card sx={{bgcolor: Grey, textAlign:'center'}}>
+            <h4>
             ↑↓ 3%
-            </Typography>
+            </h4>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card>
-            <Typography>
+          <Card sx={{bgcolor: Grey, textAlign:'center'}}>
+            <h4>
               15 km
-            </Typography>
+            </h4>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card>
-            <Typography>
+          <Card sx={{bgcolor: Grey, textAlign:'center'}}>
+            <h4>
               2h30
-            </Typography>
+            </h4>
           </Card>
         </Grid>
 
-        <Grid item xs={1}>
-          
-        </Grid>
-
-        <Grid item xs={3}>
-          <Card>
-            <Stack>
-              <Rating name="note" defaultValue={2.5} precision={0.5} />
-            </Stack>
-          </Card>
+        <Grid item xs={4}>
+          <Stack sx={{ml:2,py: 2}} >
+            <Rating name="note" defaultValue={2.5} precision={0.5}/>
+          </Stack>
         </Grid>
       </Grid>
   );
