@@ -1,5 +1,5 @@
 {
-  "name": "geotrace-init",
+  "name": "front-geotrace",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
