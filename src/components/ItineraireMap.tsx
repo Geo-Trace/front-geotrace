@@ -4,7 +4,8 @@ import Itineraire from '../models/Itineraire';
 import { Box } from '@mui/material';
 import { amber } from '@mui/material/colors';
 
-const Amber = amber[50];
+const lightAmber = amber[50];
+const Amber = amber[300];
 
 type Props = { 
   itineraire: Itineraire
@@ -12,7 +13,7 @@ type Props = {
 
 const ItineraireMap: React.FC = () => {
   return (
-    <Box sx ={{padding: 3, bgcolor: Amber, justifyContent: 'center' ,alignContent: 'center'}}>
+    <Box sx ={{border: 1,borderColor: Amber, padding: 3, bgcolor: lightAmber, justifyContent: 'center' ,alignContent: 'center'}}>
       <CardMedia
             component="img"
             image={"https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"}

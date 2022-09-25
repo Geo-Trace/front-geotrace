@@ -10,9 +10,9 @@ import ItineraireList from "./pages/ItineraireList";
 import ItineraireDetails from "./pages/itineraireDetails";
 import { Route, Routes } from "react-router-dom";
 import Itineraire from "./models/Itineraire";
-import { green } from '@mui/material/colors';
+import { lightGreen } from '@mui/material/colors';
 
-const Green = green[300];
+const Green = lightGreen[300];
 
 function Copyright() {
   return (
