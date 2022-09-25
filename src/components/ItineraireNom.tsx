@@ -11,14 +11,14 @@ type Props = {
   itineraire: Itineraire
 }
 
-const ItineraireTitre: React.FC = () => {
+const ItineraireNom: React.FC = () => {
 
 
   return (
-      <Box sx={{bgcolor: Green,textAlign: 'center' }}>
-          <h2>Titre itineraire</h2>
+      <Box sx={{mt:5,mb: 5,bgcolor: Green, textAlign: 'center',}}>
+          <h2>Nom itineraire</h2>
       </Box>
   );
 }
 
-export default ItineraireTitre; 
+export default ItineraireNom; 

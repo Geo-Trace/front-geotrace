@@ -12,7 +12,7 @@ import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import { grey } from '@mui/material/colors';
 
-const Grey = grey[200];
+const Grey = grey[50];
 
 type Props = {
   itineraire: Itineraire;
@@ -54,7 +54,7 @@ const ItineraireInfos: React.FC = () => {
         </Grid>
 
         <Grid item xs={4}>
-          <Stack sx={{ml:2,py: 2}} >
+          <Stack sx={{ml:2,mt: 2}} >
             <Rating name="note" defaultValue={2.5} precision={0.5}/>
           </Stack>
         </Grid>

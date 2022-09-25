@@ -1,21 +1,23 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import Itineraire from '../models/Itineraire';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
+import { Box } from '@mui/material';
+import { amber } from '@mui/material/colors';
+
+const Amber = amber[50];
 
 type Props = { 
   itineraire: Itineraire
 }
 
 const ItineraireMap: React.FC = () => {
-
-
   return (
-      <CardMedia component="img" alt="green iguana" image="https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"/>
+    <Box sx ={{padding: 3, bgcolor: Amber, justifyContent: 'center' ,alignContent: 'center'}}>
+      <CardMedia
+            component="img"
+            image={"https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"}
+          />
+    </Box>
   );
 }
 
