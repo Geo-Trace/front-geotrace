@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Itineraire from '../models/Itineraire';
 import Button from '@mui/material/Button';
-import { Box} from '@mui/material';
-import Container from "@mui/material/Container";
+import { Container } from '@mui/material';
 import { amber } from '@mui/material/colors';
 import SendIcon from '@mui/icons-material/Send';
 import { lightGreen } from '@mui/material/colors';
@@ -18,7 +17,7 @@ const ItineraireBoutonAccueil: React.FC = () => {
 
 
   return (
-    <Container>
+    <Container sx={{}}>
       <Button variant="text" color="success">
         Accueil
       </Button>

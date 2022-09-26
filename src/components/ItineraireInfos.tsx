@@ -1,7 +1,7 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import Itineraire from "../models/Itineraire";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Rating from '@mui/material/Rating';
 import { grey } from '@mui/material/colors';
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
@@ -20,34 +20,42 @@ const ItineraireInfos: React.FC = () => {
       <Grid container spacing={2}>
         <Grid item xs={2}>
           <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
-            <BatteryAlertIcon fontSize="small"></BatteryAlertIcon>
-            4/5
+            <Typography>
+              <BatteryAlertIcon fontSize="small" sx={{alignItems: 'center'}}></BatteryAlertIcon>
+              4/5
+            </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
           <Card sx={{padding: 1,bgcolor: Grey, textAlign:'center'}}>
-            <HeightIcon fontSize="small"></HeightIcon>
-            3%
+              <Typography>
+                <HeightIcon fontSize="small"sx={{}}></HeightIcon>
+                  3%
+              </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
           <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
-            <SwapCallsIcon fontSize="small"></SwapCallsIcon>
-            15 km
+          <Typography>
+              <SwapCallsIcon fontSize="small"></SwapCallsIcon>
+              15 km
+          </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
           <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
-            <AlarmOnIcon fontSize="small"></AlarmOnIcon> 
-            2h30
+          <Typography>
+              <AlarmOnIcon fontSize="small"></AlarmOnIcon> 
+              2h30
+          </Typography>
           </Card>
         </Grid>
 
-        <Grid item xs={4}>
-              <Rating name="popularité" defaultValue={2.5} precision={0.5}sx={{padding: 1}}/>
+        <Grid item xs={4} sx={{textAlign:'right'}}>
+              <Rating name="popularité" defaultValue={2.5} precision={0.5} sx={{padding: 1}}/>
         </Grid>
       </Grid>
   );

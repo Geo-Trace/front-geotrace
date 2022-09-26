@@ -6,7 +6,6 @@ import ItineraireMap from "../components/ItineraireMap";
 import ItineraireNom from "../components/ItineraireNom";
 import Itineraire from "../models/Itineraire";
 import { grey } from '@mui/material/colors';
-import ItineraireBoutonAccueil from "../components/ItineraireBoutonAccueil";
 
 const Grey = grey[200];
 
@@ -16,11 +15,8 @@ const Grey = grey[200];
 function ItineraireList() {
 
     return (
-            <><Container>
-                <Box>
-                    <ItineraireNom/>
-                </Box>             
-                <Box>
+            <Container>
+                    <ItineraireNom/>            
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
                             <ItineraireMap />
@@ -32,8 +28,7 @@ function ItineraireList() {
                             <ItineraireBoutonExporter />
                         </Grid>
                     </Grid>
-                </Box>
-            </Container></>
+            </Container>
             )
 }
 

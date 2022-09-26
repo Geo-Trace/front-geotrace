@@ -13,7 +13,7 @@ type Props = {
 
 const ItineraireMap: React.FC = () => {
   return (
-    <Card sx ={{borderRadius: 1, padding: 3, bgcolor: lightAmber, justifyContent: 'center' ,alignContent: 'center'}}>
+    <Card sx ={{borderRadius: 1, padding: 3, bgcolor: lightAmber, justifyContent: 'center'}}>
       <CardMedia
             component="img"
             image={"https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"}

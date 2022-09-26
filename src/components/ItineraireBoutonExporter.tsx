@@ -12,7 +12,7 @@ const ItineraireBoutonExporter: React.FC = () => {
 
   return (
   <Box sx={{mt: 8, textAlign: 'right'}}>
-    <Button variant="contained" color= "inherit">
+    <Button variant="outlined" color= "inherit">
       Télécharger GPX
     </Button>
   </Box>

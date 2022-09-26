@@ -41,7 +41,7 @@ export default function Album() {
         <Toolbar>{/* Toolbar */}</Toolbar>
       </AppBar>
       <AppBar position="relative" sx={{bgcolor: Green, height: 100}}>
-        <ItineraireBoutonAccueil />
+        <ItineraireBoutonAccueil/>
       </AppBar>
       <main>
         <Routes>
