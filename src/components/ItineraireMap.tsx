@@ -1,7 +1,7 @@
 import * as React from 'react';
 import CardMedia from '@mui/material/CardMedia';
 import Itineraire from '../models/Itineraire';
-import { Box } from '@mui/material';
+import { Box, Card } from '@mui/material';
 import { amber } from '@mui/material/colors';
 
 const lightAmber = amber[50];
@@ -13,12 +13,12 @@ type Props = {
 
 const ItineraireMap: React.FC = () => {
   return (
-    <Box sx ={{border: 1,borderColor: Amber, padding: 3, bgcolor: lightAmber, justifyContent: 'center' ,alignContent: 'center'}}>
+    <Card sx ={{borderRadius: 1, padding: 3, bgcolor: lightAmber, justifyContent: 'center' ,alignContent: 'center'}}>
       <CardMedia
             component="img"
             image={"https://i.postimg.cc/Bn2sH5PM/Circuit-des-4-monts.png"}
           />
-    </Box>
+    </Card>
   );
 }
 

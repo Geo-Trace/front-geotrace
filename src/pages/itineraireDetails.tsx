@@ -18,7 +18,6 @@ function ItineraireList() {
     return (
             <><Container>
                 <Box>
-                    <ItineraireBoutonAccueil />
                     <ItineraireNom/>
                 </Box>             
                 <Box>

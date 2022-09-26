@@ -1,11 +1,14 @@
 import * as React from 'react';
 import Itineraire from '../models/Itineraire';
 import Button from '@mui/material/Button';
-import { Box } from '@mui/material';
+import { Box} from '@mui/material';
+import Container from "@mui/material/Container";
 import { amber } from '@mui/material/colors';
 import SendIcon from '@mui/icons-material/Send';
+import { lightGreen } from '@mui/material/colors';
 
 const Amber = amber[50];
+const Green = lightGreen[300];
 
 type Props = { 
   itineraire: Itineraire
@@ -15,14 +18,14 @@ const ItineraireBoutonAccueil: React.FC = () => {
 
 
   return (
-    <Box sx={{mt:5,mb: 5}}>
-      <Button variant="contained" color= "inherit" sx={{mr: 2}}>
+    <Container>
+      <Button variant="text" color="success">
         Accueil
       </Button>
-      <Button variant="contained" endIcon={<SendIcon />} color= "inherit">
+      <Button variant="text" color="success" endIcon={<SendIcon />}>
         Envoyer GPX
       </Button>
-    </Box>
+    </Container>
   );
 }
 
