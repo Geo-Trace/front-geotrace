@@ -2,7 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import Itineraire from '../models/Itineraire';
-import { CardActionArea, Grid } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 
 type Props = { 
   itineraire: Itineraire

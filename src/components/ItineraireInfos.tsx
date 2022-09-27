@@ -4,12 +4,12 @@ import Itineraire from "../models/Itineraire";
 import { Grid, Typography } from "@mui/material";
 import Rating from '@mui/material/Rating';
 import { grey } from '@mui/material/colors';
-import AlarmOnIcon from '@mui/icons-material/AlarmOn';
-import HeightIcon from '@mui/icons-material/Height';
-import SwapCallsIcon from '@mui/icons-material/SwapCalls';
-import BatteryAlertIcon from '@mui/icons-material/BatteryAlert';
 
-const Grey = grey[50];
+
+
+const lightGrey = grey[50];
+const Grey = grey[500];
+
 
 type Props = {
   itineraire: Itineraire;
@@ -17,47 +17,69 @@ type Props = {
 
 const ItineraireInfos: React.FC = () => {
   return (
-      <Grid container spacing={2}>
+    <><Grid container spacing={2} sx={{ textAlign: 'center',color: Grey }}>
+      <Grid item xs={2}>
+        <Typography>
+          Difficulté
+        </Typography>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Typography>
+          Dénivelé
+        </Typography>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Typography>
+          Distance
+        </Typography>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Typography>
+          Durée
+        </Typography>
+      </Grid>
+
+      
+    </Grid><Grid container spacing={2}>
         <Grid item xs={2}>
-          <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
+          <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              <BatteryAlertIcon fontSize="small" sx={{alignItems: 'center'}}></BatteryAlertIcon>
               4/5
             </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card sx={{padding: 1,bgcolor: Grey, textAlign:'center'}}>
-              <Typography>
-                <HeightIcon fontSize="small"sx={{}}></HeightIcon>
-                  3%
-              </Typography>
+          <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
+            <Typography>
+              3%
+            </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
-          <Typography>
-              <SwapCallsIcon fontSize="small"></SwapCallsIcon>
+          <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
+            <Typography>
               15 km
-          </Typography>
+            </Typography>
           </Card>
         </Grid>
 
         <Grid item xs={2}>
-          <Card sx={{padding: 1, bgcolor: Grey, textAlign:'center'}}>
-          <Typography>
-              <AlarmOnIcon fontSize="small"></AlarmOnIcon> 
+          <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
+            <Typography>
               2h30
-          </Typography>
+            </Typography>
           </Card>
         </Grid>
 
-        <Grid item xs={4} sx={{textAlign:'right'}}>
-              <Rating name="popularité" defaultValue={2.5} precision={0.5} sx={{padding: 1}}/>
+        <Grid item xs={4} sx={{ textAlign: 'right' }}>
+          <Rating name="popularité" defaultValue={2.5} precision={0.5} sx={{ padding: 1 }} />
         </Grid>
-      </Grid>
+      </Grid></>
   );
 };
 
