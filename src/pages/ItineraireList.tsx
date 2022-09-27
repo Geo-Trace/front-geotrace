@@ -2,7 +2,7 @@ import { Container, Grid} from "@mui/material";
 import React, {useState, useEffect} from "react";
 import ItineraireCard from "../components/ItineraireCard"
 import Itineraire from "../models/Itineraire";
-import ITINERAIRE from "../models/mock-itineraire.json";
+import ITINERAIRES from "../models/mock-itineraire.json";
 
 
 
@@ -12,7 +12,7 @@ function ItineraireList() {
     const [itineraires, setItineaires] = useState<Itineraire[]>([]); 
     useEffect(() => {
         // code executer au lancement de la page 
-        setItineaires(ITINERAIRE);
+        setItineaires(ITINERAIRES);
     },[]);
     
     return (
