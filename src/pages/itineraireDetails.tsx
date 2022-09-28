@@ -6,6 +6,7 @@ import ItineraireMap from "../components/ItineraireMap";
 import ItineraireNom from "../components/ItineraireNom";
 import Itineraire from "../models/Itineraire";
 import { grey } from '@mui/material/colors';
+import ItineraireCommentaire from "../components/ItineraireCommentaire";
 
 const Grey = grey[200];
 
@@ -28,6 +29,7 @@ function ItineraireList() {
                             <ItineraireBoutonExporter />
                         </Grid>
                     </Grid>
+                    <ItineraireCommentaire/>
             </Container>
             )
 }
