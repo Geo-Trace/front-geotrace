@@ -46,7 +46,7 @@ export default function Album() {
       <main>
         <Routes>
           <Route path="/" element={<ItineraireList />} />
-          <Route path="/itineraire/" element={<ItineraireDetails />} />
+          <Route path="/itineraire/:id" element={<ItineraireDetails />} />
         </Routes>
       </main>
       {/* Footer */}
