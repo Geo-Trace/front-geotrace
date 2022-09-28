@@ -18,7 +18,7 @@ const ItineraireBoutonAccueil: React.FC = () => {
 
   return (
     <Container sx={{mt: 8}}>
-      <Button variant="text" color="success">
+      <Button variant="text" color="success" href='http://localhost:3000'>
         Accueil
       </Button>
       <Button variant="text" color="success" endIcon={<SendIcon />}>
