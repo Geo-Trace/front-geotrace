@@ -31,7 +31,7 @@ const ItineraireInfos: React.FC<Props> = ({itineraire}) => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-            {itineraire.denivele} %
+              {itineraire.denivele} %
             </Typography>
           </Card>
         </Grid>
@@ -42,7 +42,7 @@ const ItineraireInfos: React.FC<Props> = ({itineraire}) => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-            {itineraire.distance} km
+              {itineraire.distance} km
             </Typography>
           </Card>
         </Grid>
@@ -53,7 +53,7 @@ const ItineraireInfos: React.FC<Props> = ({itineraire}) => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              {itineraire.distance/5}
+              {Math.round(itineraire.distance/5)} h
             </Typography>
           </Card>
         </Grid>

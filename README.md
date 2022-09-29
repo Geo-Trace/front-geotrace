@@ -17,7 +17,6 @@ Ce projet a été démarré avec Create React App.
 
 - cloner le dossier et placer vous dans le dossier 
 - taper la commande : `npm install`
-- taper la commande : `npm  @mui/styles`
 - taper la commande : `npm start`  pour lancer le serveur de dévellopement
 
 ## Scripts disponibles

@@ -16,6 +16,7 @@ const ItineraireCard: React.FC<Props> = ({ itineraire }) => {
   return (
     <Card sx={{ maxWidth: 600 }}>
       <CardActionArea>
+          
         <CardMedia
           component="img"
           image={itineraire.image}
