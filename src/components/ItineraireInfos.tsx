@@ -10,7 +10,7 @@ type Props = {
   itineraire: Itineraire;
 };
 
-const ItineraireInfos: React.FC = () => {
+const ItineraireInfos: React.FC<Props> = ({itineraire}) => {
   return (
     
       <Grid container spacing={2}>
@@ -20,7 +20,7 @@ const ItineraireInfos: React.FC = () => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              4/5
+              {itineraire.difficulte}/5
             </Typography>
           </Card>
         </Grid>
@@ -31,7 +31,7 @@ const ItineraireInfos: React.FC = () => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              3%
+            {itineraire.denivele} %
             </Typography>
           </Card>
         </Grid>
@@ -42,7 +42,7 @@ const ItineraireInfos: React.FC = () => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              15 km
+            {itineraire.distance} km
             </Typography>
           </Card>
         </Grid>
@@ -53,7 +53,7 @@ const ItineraireInfos: React.FC = () => {
           </Typography>
           <Card sx={{ padding: 1, bgcolor: lightGrey, textAlign: 'center' }}>
             <Typography>
-              2h30
+              {itineraire.distance/5}
             </Typography>
           </Card>
         </Grid>

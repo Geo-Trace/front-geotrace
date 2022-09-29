@@ -12,7 +12,8 @@ function ItineraireList() {
     const [itineraires, setItineaires] = useState<Itineraire[]>([]); 
     useEffect(() => {
         // code executer au lancement de la page 
-        setItineaires(ITINERAIRES);
+        return
+            setItineaires(ITINERAIRES);
     },[]);
     
     return (

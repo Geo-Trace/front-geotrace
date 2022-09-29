@@ -12,13 +12,13 @@ type Props = {
   itineraire: Itineraire
 }
 
-const ItineraireNom: React.FC = () => {
+const ItineraireNom: React.FC<Props> = ({itineraire}) => {
 
 
   return (
     <Box>
       <Typography sx={{mt:5,mb: 5,border: 1,borderColor: Green,borderRadius: 1, color: Brown, bgcolor: GreenLight, textAlign: 'center',fontSize: 'h4.fontSize'}}>
-          Alpage de Chargès 
+        {itineraire.nom}
       </Typography>
     </Box>
   );

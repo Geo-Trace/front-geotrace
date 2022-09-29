@@ -26,7 +26,7 @@ function ItineraireDetails() {
             <Container>
                 {itineraire ? (
                     <div>
-                    <ItineraireNom/>            
+                    <ItineraireNom itineraire={itineraire}/>            
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
 
@@ -34,7 +34,7 @@ function ItineraireDetails() {
                         </Grid>
 
                         <Grid item xs={6}>
-                            <ItineraireInfos />
+                            <ItineraireInfos itineraire={itineraire}/>
                             <ItineraireDescriptif />
                             <ItineraireBoutonExporter />
                         </Grid>

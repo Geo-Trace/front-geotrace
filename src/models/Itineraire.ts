@@ -16,7 +16,7 @@ export default class Itineraire {
         difficulte: number,
         denivele: number,
         image: string,
-        secteurGeo: string
+        secteurGeo: string,
     ){
         this.id = id;
         this.nom = nom;
