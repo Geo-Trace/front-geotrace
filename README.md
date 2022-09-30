@@ -1,13 +1,7 @@
 # front-geotrace
 front de l'application Geo-Trace
 
-_version traduit en français_ 
-
-# Premiers pas avec l'application Create React
-
-Ce projet a été démarré avec Create React App.
-
-## Installation du projet 
+## Installation du projet manuel 
 
 ### prérequis 
 
@@ -18,6 +12,23 @@ Ce projet a été démarré avec Create React App.
 - cloner le dossier et placer vous dans le dossier 
 - taper la commande : `npm install`
 - taper la commande : `npm start`  pour lancer le serveur de dévellopement
+
+
+## installation avec Dockerfile 
+
+
+pour crée l'image taper cette commande : `docker build -t front-geotrace .` ( à la racine de front-geotrace)
+
+ensuite pour lancer le container, taper cette commande : `docker run -d -p 80:3000 front-geotrace`
+
+le container expose le port : 3000 (affichage web )
+
+_version traduit en français_ 
+
+# Premiers pas avec l'application Create React
+
+Ce projet a été démarré avec Create React App.
+
 
 ## Scripts disponibles
 
