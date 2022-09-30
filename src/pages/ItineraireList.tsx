@@ -13,7 +13,6 @@ function ItineraireList() {
     useEffect(() => {
         // code executer au lancement de la page 
             setItineaires(ITINERAIRES);
-        return
     },[]);
     
     return (

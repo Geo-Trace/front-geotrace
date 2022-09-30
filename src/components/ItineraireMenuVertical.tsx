@@ -13,7 +13,7 @@ type Props = {
   itineraire: Itineraire
 }
 
-const ItineraireBoutonAccueil: React.FC = () => {
+const ItineraireMenuVertical: React.FC = () => {
 
 
   return (
@@ -28,4 +28,4 @@ const ItineraireBoutonAccueil: React.FC = () => {
   );
 }
 
-export default ItineraireBoutonAccueil; 
+export default ItineraireMenuVertical; 
