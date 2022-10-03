@@ -43,8 +43,8 @@ export default function Album() {
       </AppBar>
       <main>
         <Routes>
-          <Route path="/itineraire" element={<ItineraireList />} />
-          <Route path="/itineraire/:id" element={<ItineraireDetails />} />
+          <Route path="/" element={<ItineraireList />} />
+          <Route path="/itineraire" element={<ItineraireDetails />} />
         </Routes>
       </main>
       {/* Footer */}
