@@ -9,9 +9,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import ItineraireList from "./pages/ItineraireList";
 import ItineraireDetails from "./pages/itineraireDetails";
 import { Route, Routes } from "react-router-dom";
-import Itineraire from "./models/Itineraire";
 import { lightGreen } from '@mui/material/colors';
-import Container from "@mui/material/Container";
 import ItineraireMenuVertical from "./components/ItineraireMenuVertical";
 
 const Green = lightGreen[300];
@@ -46,13 +44,13 @@ export default function Album() {
       <main>
         <Routes>
           <Route path="/" element={<ItineraireList />} />
-          <Route path="/itineraire/:id" element={<ItineraireDetails />} />
+          <Route path="/itineraire" element={<ItineraireDetails />} />
         </Routes>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          GEO-TRACE
         </Typography>
         <Typography
           variant="subtitle1"
@@ -60,7 +58,7 @@ export default function Album() {
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          By Remi Ponche, Phillipe Reich et Nacim Haiahem
         </Typography>
         <Copyright />
       </Box>
