@@ -1,7 +1,4 @@
-FROM node:16.17.0
-
-LABEL version="1.0"
-LABEL description="front de l'application Geotrace"
+FROM node:16.17.0 AS build
 
 WORKDIR /app
 
@@ -12,13 +9,17 @@ RUN npm run build
 RUN npm install -g serve
 RUN rm -r n* p* src/ tsconfig.json
 
-EXPOSE 3000
 
-CMD ["serve", "-s" , "build"] 
+FROM nginx:alpine
 
+LABEL version="1.0"
+LABEL description="front de l'application Geotrace"
 
+COPY --from=build /app/build /usr/share/nginx/html
 
+EXPOSE 80
 
+CMD ["nginx", "-g", "daemon off;"]
 
 
 
