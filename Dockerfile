@@ -6,9 +6,6 @@ COPY . .
 
 RUN npm install --production
 RUN npm run build
-RUN npm install -g serve
-RUN rm -r n* p* src/ tsconfig.json
-
 
 FROM nginx:alpine
 
