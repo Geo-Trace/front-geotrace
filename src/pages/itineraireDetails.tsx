@@ -1,26 +1,28 @@
-import { Box, Card, CardContent, Container, Grid} from "@mui/material";
+import { Container, Grid} from "@mui/material";
 import ItineraireDescriptif from "../components/ItineraireDescriptif";
 import ItineraireBoutonExporter from "../components/ItineraireBoutonExporter";
 import ItineraireInfos from "../components/ItineraireInfos";
 import ItineraireMap from "../components/ItineraireMap";
 import ItineraireNom from "../components/ItineraireNom";
 import Itineraire from "../models/Itineraire";
-import ITINERAIRES from "../models/mock-itineraire.json";
-import { grey } from '@mui/material/colors';
-import ItineraireCommentaire from "../components/ItineraireCommentaire";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from 'axios';
 
-
-const Grey = grey[200];
 
 function ItineraireDetails() {
 
     const [itineraire, setItineaire] = useState<Itineraire>(); 
     const urlParams = useParams();
     useEffect(() => {
-        setItineaire(ITINERAIRES.find(element => element._id.toString() == urlParams.id))
-    }, []); 
+        // fetch les donnée de API 
+        axios.get(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/itineraire/${urlParams.id}`).then((res) => {
+            setItineaire(res.data);  
+        })
+
+
+            //setItineaires(ITINERAIRES);
+    },[]);
 
     return (
             <Container>

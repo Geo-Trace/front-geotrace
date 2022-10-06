@@ -1,11 +1,10 @@
 import { Container, Grid} from "@mui/material";
 import React, {useState, useEffect} from "react";
 import ItineraireCard from "../components/ItineraireCard"
-import ItineraireCommentaire from "../components/ItineraireCommentaire";
 import ItineraireRecherche from "../components/ItineraireRecherche";
 import Itineraire from "../models/Itineraire";
-import ITINERAIRES from "../models/mock-itineraire.json";
 import { useNavigate } from 'react-router-dom'; 
+import axios from "axios";
 
 
 
@@ -14,8 +13,13 @@ function ItineraireList() {
     
     const [itineraires, setItineaires] = useState<Itineraire[]>([]); 
     useEffect(() => {
-        // code executer au lancement de la page 
-            setItineaires(ITINERAIRES);
+        // fetch les donnée de API 
+        axios.get(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/itineraire`).then((res) => { 
+            setItineaires(res.data);  
+        })
+
+
+            //setItineaires(ITINERAIRES);
     },[]);
     const navigate = useNavigate(); 
 
