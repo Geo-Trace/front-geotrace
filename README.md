@@ -19,9 +19,9 @@ front de l'application Geo-Trace
 
 pour crée l'image taper cette commande : `docker build -t front-geotrace .` ( à la racine de front-geotrace)
 
-ensuite pour lancer le container, taper cette commande : `docker run -d -p 80:3000 front-geotrace`
+ensuite pour lancer le container, taper cette commande : `docker run -d -p 80:80 front-geotrace`
 
-le container expose le port : 3000 (affichage web )
+le container expose le port : 80 (affichage web )
 
 _version traduit en français_ 
 
