@@ -10,6 +10,7 @@ import { grey } from '@mui/material/colors';
 import ItineraireCommentaire from "../components/ItineraireCommentaire";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from 'axios';
 
 
 const Grey = grey[200];
@@ -19,8 +20,15 @@ function ItineraireDetails() {
     const [itineraire, setItineaire] = useState<Itineraire>(); 
     const urlParams = useParams();
     useEffect(() => {
-        setItineaire(ITINERAIRES.find(element => element._id.toString() == urlParams.id))
-    }, []); 
+        // fetch les donnée de API 
+        axios.get(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_API_PORT}/itineraire/${urlParams.id}`).then((res) => {
+            console.log(process.env); 
+            setItineaire(res.data);  
+        })
+
+
+            //setItineaires(ITINERAIRES);
+    },[]);
 
     return (
             <Container>
