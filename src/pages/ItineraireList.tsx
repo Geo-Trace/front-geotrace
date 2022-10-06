@@ -1,10 +1,8 @@
 import { Container, Grid} from "@mui/material";
 import React, {useState, useEffect} from "react";
 import ItineraireCard from "../components/ItineraireCard"
-import ItineraireCommentaire from "../components/ItineraireCommentaire";
 import ItineraireRecherche from "../components/ItineraireRecherche";
 import Itineraire from "../models/Itineraire";
-import ITINERAIRES from "../models/mock-itineraire.json";
 import { useNavigate } from 'react-router-dom'; 
 import axios from "axios";
 

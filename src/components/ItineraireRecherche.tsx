@@ -1,9 +1,6 @@
 import * as React from 'react';
 import {TextField } from '@mui/material';
-import Itineraire from '../models/Itineraire';
-import { lightGreen } from '@mui/material/colors';
 
-const Green = lightGreen[300];
 
 const ItineraireRecherche: React.FC = () => {
 
