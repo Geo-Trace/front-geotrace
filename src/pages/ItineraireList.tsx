@@ -6,6 +6,7 @@ import ItineraireRecherche from "../components/ItineraireRecherche";
 import Itineraire from "../models/Itineraire";
 import ITINERAIRES from "../models/mock-itineraire.json";
 import { useNavigate } from 'react-router-dom'; 
+import axios from "axios";
 
 
 
@@ -14,8 +15,15 @@ function ItineraireList() {
     
     const [itineraires, setItineaires] = useState<Itineraire[]>([]); 
     useEffect(() => {
-        // code executer au lancement de la page 
-            setItineaires(ITINERAIRES);
+        // fetch les donnée de API 
+        console.log(process.env);
+        axios.get(`http://${process.env.API_URL}:3000/itineraire`).then((res) => {
+            console.log(process.env); 
+            setItineaires(res.data);  
+        })
+
+
+            //setItineaires(ITINERAIRES);
     },[]);
     const navigate = useNavigate(); 
 
