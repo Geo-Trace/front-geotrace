@@ -19,7 +19,7 @@ function ItineraireList() {
     },[]);
     const navigate = useNavigate(); 
 
-    const gotToItineraire = (id: number) => {
+    const gotToItineraire = (id: string) => {
         navigate(`/itineraire/${id}`); 
     }
     
@@ -28,7 +28,7 @@ function ItineraireList() {
                 <ItineraireRecherche />
                 <Grid container spacing={4}>
                     {itineraires.map((itineraire) => (
-                        <Grid item key={itineraire.id} xs={12} sm={6} md={4} onClick={() => gotToItineraire(itineraire.id)} >
+                        <Grid item key={itineraire._id} xs={12} sm={6} md={4} onClick={() => gotToItineraire(itineraire._id)} >
                             <ItineraireCard itineraire={itineraire}  />
                         </Grid>
                     ))}

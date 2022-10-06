@@ -19,7 +19,7 @@ function ItineraireDetails() {
     const [itineraire, setItineaire] = useState<Itineraire>(); 
     const urlParams = useParams();
     useEffect(() => {
-        setItineaire(ITINERAIRES.find(element => element.id.toString() == urlParams.id))
+        setItineaire(ITINERAIRES.find(element => element._id.toString() == urlParams.id))
     }, []); 
 
     return (
@@ -35,7 +35,7 @@ function ItineraireDetails() {
 
                         <Grid item xs={6}>
                             <ItineraireInfos itineraire={itineraire}/>
-                            <ItineraireDescriptif />
+                            <ItineraireDescriptif itineraire={itineraire} />
                             <ItineraireBoutonExporter />
                         </Grid>
                     </Grid>
