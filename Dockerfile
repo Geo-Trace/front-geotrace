@@ -1,7 +1,7 @@
 FROM node:16.17.0 AS build
 
 ENV REACT_APP_API_PORT=3000
-ENV REACT_APP_API_URL=localhost
+ENV REACT_APP_API_URL=http://example.fr 
 
 WORKDIR /app
 
@@ -10,17 +10,18 @@ COPY . .
 RUN npm install --production
 RUN npm run build
 
-FROM nginx:alpine
+FROM node:16.17.0
 
 LABEL version="1.0"
 LABEL description="front de l'application Geotrace"
 
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/build /app
 
-EXPOSE 80
+RUN npm install -g serve
 
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3000
 
+CMD ["serve", "-s" , "app"]
 
 
 
