@@ -11,6 +11,7 @@ import ItineraireDetails from "./pages/itineraireDetails";
 import { Route, Routes } from "react-router-dom";
 import { lightGreen } from '@mui/material/colors';
 import ItineraireMenuVertical from "./components/ItineraireMenuVertical";
+import { Card } from "@mui/material";
 
 const Green = lightGreen[300];
 
@@ -38,8 +39,8 @@ export default function Album() {
       <AppBar position="relative" sx={{bgcolor: lGreen, height: 30}}>
         <Toolbar>{/* Toolbar */}</Toolbar>
       </AppBar>
-      <AppBar position="relative" sx={{bgcolor: Green, height: 100}}>
-        <ItineraireMenuVertical/>
+      <AppBar position="relative"  sx={{bgcolor: Green, height: 150}}>
+        <ItineraireMenuVertical/> 
       </AppBar>
       <main>
         <Routes>

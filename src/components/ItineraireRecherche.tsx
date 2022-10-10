@@ -7,7 +7,7 @@ const ItineraireRecherche: React.FC = () => {
 
     return (
         <form noValidate autoComplete="on">
-        <TextField id="outlined-basic" label="Rechercher un itineraire" variant="outlined" color ="success" placeholder="Placeholder" sx={{mt:2,mb: 5, width: 800}}/>
+        <TextField id="outlined-basic" label="Rechercher un itineraire" variant="outlined" color ="success" placeholder="nom, ville, region..." sx={{mt:5,width: 800}}/>
       </form>
     );
     }
