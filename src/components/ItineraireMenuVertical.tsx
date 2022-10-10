@@ -15,10 +15,6 @@ const ItineraireMenuVertical: React.FC = () => {
           Accueil
         </Button>
       </Link>
-
-      <Button variant="text" color="success" endIcon={<SendIcon />}>
-        Envoyer GPX
-      </Button>
     </Container>
   );
 }
