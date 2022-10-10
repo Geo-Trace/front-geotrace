@@ -1,7 +1,7 @@
 FROM node:16.17.0 AS build
 
 ENV REACT_APP_API_PORT=3000
-ENV REACT_APP_API_URL=http://example.fr 
+ENV REACT_APP_API_URL=http://localhost
 
 WORKDIR /app
 

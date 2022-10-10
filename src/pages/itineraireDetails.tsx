@@ -38,7 +38,6 @@ function ItineraireDetails() {
                         <Grid item xs={6}>
                             <ItineraireInfos itineraire={itineraire}/>
                             <ItineraireDescriptif itineraire={itineraire} />
-                            <ItineraireBoutonExporter />
                         </Grid>
                     </Grid>
                     </div> ) : (<div>Page non trouver</div>) }
