@@ -36,11 +36,19 @@ export default function Album() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="relative" sx={{bgcolor: lGreen, height: 30}}>
-        <Toolbar>{/* Toolbar */}</Toolbar>
+      <AppBar position="relative" sx={{ bgcolor: lGreen, height: 30 }}>
+        <Toolbar>
+         
+        </Toolbar>
+        
       </AppBar>
-      <AppBar position="relative"  sx={{bgcolor: Green, height: 150}}>
-        <ItineraireMenuVertical/> 
+      <AppBar position="relative" sx={{ bgcolor: Green, height: 150 }}>
+      <Box sx={{ textAlign: "center"}}>
+            <img src="https://cdn.discordapp.com/attachments/1002580686487703572/1029505126928498718/logo_geotrace.png" height="150" />
+
+      </Box>
+        <ItineraireMenuVertical />
+
       </AppBar>
       <main>
         <Routes>
